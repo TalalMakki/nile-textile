@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-title-ar="لوحة التحكم | نايل تكستايل" data-title-en="Admin Panel | Nile Textile">لوحة التحكم | نايل تكستايل</title>
+<link rel="icon" href="../assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <img src="../assets/logo-icon.png" alt="شعار نايل للصناعات النسيجية">
+      <span data-lang="ar">نايل تكستايل</span><span data-lang="en">Nile Textile</span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="../index.html"><span data-lang="ar">الموقع الرئيسي</span><span data-lang="en">Main Site</span></a>
+    </nav>
+    <button class="lang-toggle" type="button">English</button>
+    <button class="nav-toggle" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="admin-shell">
+  <h1 style="margin-top:1.2em;"><span data-lang="ar">لوحة تحكم المحتوى</span><span data-lang="en">Content Admin Panel</span></h1>
+  <p style="color:#55645d; margin-bottom:1.6em;">
+    <span data-lang="ar">أضف أو عدّل المنتجات وشعارات العملاء التي تظهر في الموقع.</span>
+    <span data-lang="en">Add or edit the products and client logos shown on the site.</span>
+  </p>
+
+  <div class="admin-notice">
+    <span data-lang="ar">هذه اللوحة تخزّن التعديلات في متصفحك الحالي فقط (localStorage) كنموذج عملي بدون قاعدة بيانات. للنشر الفعلي بحيث تظهر التعديلات لكل الزوار، يُنصح بربط هذه النماذج بخدمة تخزين أو لوحة تحكم خلفية (CMS/API) — راجع ملف README.md في المشروع.</span>
+    <span data-lang="en">This panel saves changes to your current browser only (localStorage) as a working demo with no database. For a real deployment where all visitors see the same changes, connect these forms to a storage service or backend (CMS/API) — see README.md in the project.</span>
+  </div>
+
+  <!-- ===== Products ===== -->
+  <div class="admin-card">
+    <h2><span data-lang="ar">إضافة منتج جديد</span><span data-lang="en">Add a New Product</span></h2>
+    <form id="product-form">
+      <div class="admin-row">
+        <div class="admin-field">
+          <label for="pf-name"><span data-lang="ar">اسم المنتج</span><span data-lang="en">Product Name</span></label>
+          <input id="pf-name" required>
+        </div>
+        <div class="admin-field">
+          <label for="pf-cat"><span data-lang="ar">القسم</span><span data-lang="en">Category</span></label>
+          <select id="pf-cat" required>
+            <option value="clothes" data-lang-ar="ملابس جاهزة" data-lang-en="Ready-made Clothing">ملابس جاهزة</option>
+            <option value="towels" data-lang-ar="فوط" data-lang-en="Towels">فوط</option>
+            <option value="robes" data-lang-ar="برنس" data-lang-en="Bathrobes">برنس</option>
+            <option value="fabrics" data-lang-ar="أقمشة" data-lang-en="Fabrics">أقمشة</option>
+          </select>
+        </div>
+      </div>
+      <div class="admin-field">
+        <label for="pf-desc"><span data-lang="ar">وصف مختصر</span><span data-lang="en">Short Description</span></label>
+        <textarea id="pf-desc" rows="2"></textarea>
+      </div>
+      <div class="admin-field">
+        <label for="pf-tag">
+          <span data-lang="ar">وسم (اختياري، مثال: الأكثر طلبًا)</span>
+          <span data-lang="en">Tag (optional, e.g. Best seller)</span>
+        </label>
+        <input id="pf-tag">
+      </div>
+      <button type="submit" class="btn btn-primary"><span data-lang="ar">إضافة المنتج</span><span data-lang="en">Add Product</span></button>
+    </form>
+  </div>
+
+  <div class="admin-card">
+    <h2><span data-lang="ar">المنتجات الحالية</span><span data-lang="en">Current Products</span></h2>
+    <div id="product-list"></div>
+  </div>
+
+  <!-- ===== Clients ===== -->
+  <div class="admin-card">
+    <h2><span data-lang="ar">إضافة عميل</span><span data-lang="en">Add a Client</span></h2>
+    <form id="client-form">
+      <div class="admin-field">
+        <label for="cf-name-admin"><span data-lang="ar">اسم العميل / العلامة التجارية</span><span data-lang="en">Client / Brand Name</span></label>
+        <input id="cf-name-admin" required>
+      </div>
+      <button type="submit" class="btn btn-primary"><span data-lang="ar">إضافة العميل</span><span data-lang="en">Add Client</span></button>
+    </form>
+  </div>
+
+  <div class="admin-card">
+    <h2><span data-lang="ar">العملاء الحاليون</span><span data-lang="en">Current Clients</span></h2>
+    <div id="client-list"></div>
+  </div>
+</div>
+
+<div class="footer-brand">
+  <div class="container" style="display:flex; align-items:center;">
+    <img src="../assets/logo-full.png" alt="نايل للصناعات النسيجية — Nile Textile Industries S.A.E.">
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:1em;">
+    <span><span data-lang="ar">© <span class="js-year"></span> نايل تكستايل. جميع الحقوق محفوظة.</span><span data-lang="en">© <span class="js-year"></span> Nile Textile. All rights reserved.</span></span>
+    <span><a href="../index.html"><span data-lang="ar">العودة للموقع</span><span data-lang="en">Back to Site</span></a></span>
+  </div>
+</footer>
+
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/admin.js"></script>
+<script>
+  // keep the category <select> options localized when the language toggles
+  (function () {
+    const select = document.getElementById('pf-cat');
+    function syncOptions() {
+      const lang = document.documentElement.classList.contains('lang-en') ? 'en' : 'ar';
+      select.querySelectorAll('option').forEach(opt => {
+        opt.textContent = lang === 'en' ? opt.dataset.langEn : opt.dataset.langAr;
+      });
+    }
+    syncOptions();
+    document.addEventListener('click', (e) => { if (e.target.closest('.lang-toggle')) setTimeout(syncOptions, 0); });
+  })();
+</script>
+</body>
+</html>
