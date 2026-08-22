@@ -21,8 +21,8 @@
 
     if (!products.length) {
       grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
-        <span data-lang="ar">لا توجد منتجات مضافة في هذا القسم بعد. يمكن إضافة منتجات جديدة من <a href="../admin/admin.html" style="color:#1d74a8; font-weight:700;">لوحة التحكم</a>.</span>
-        <span data-lang="en">No products have been added to this category yet. New products can be added from the <a href="../admin/admin.html" style="color:#1d74a8; font-weight:700;">admin panel</a>.</span>
+        <span data-lang="ar">لا توجد منتجات مضافة في هذا القسم بعد.</span>
+        <span data-lang="en">No products have been added to this category yet.</span>
       </div>`;
       return;
     }

@@ -320,6 +320,10 @@ section { padding: 5.5em 0; }
     animation-delay: 1.5s;
 }
 
+.wm-marker:nth-of-type(7) .wm-ping {
+    animation-delay: 1.8s;
+}
+
 @keyframes wm-pulse {
     0% {
         transform: scale(.6);
@@ -543,6 +547,8 @@ section { padding: 5.5em 0; }
   padding: .6em 1.1em; font-size: .9rem; font-family: var(--font-display); font-weight: 700;
 }
 .social-list a:hover { border-color: var(--dye-gold); color: var(--dye-gold); }
+#news .social-list a { border-color: var(--sand-line); color: var(--ink); }
+#news .social-list a:hover { border-color: var(--thread-red); color: var(--thread-red); }
 
 .form-field { margin-bottom: 1.1em; }
 .form-field label { display: block; font-size: .85rem; font-weight: 700; margin-bottom: .4em; color: rgba(237,239,226,.85); }
@@ -611,28 +617,3 @@ section { padding: 5.5em 0; }
 .page-hero .crumbs a:hover { color: var(--dye-gold); }
 .page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: .3em; }
 
-/* ---------- admin ---------- */
-.admin-shell { max-width: 880px; margin: 0 auto; padding: 3em 28px 6em; }
-.admin-card { background: #fff; border: 1px solid var(--sand-line); border-radius: var(--radius); padding: 1.6em; margin-bottom: 1.6em; }
-.admin-card h2 { font-size: 1.05rem; }
-.admin-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em; }
-@media (max-width: 640px) { .admin-row { grid-template-columns: 1fr; } }
-.admin-field { margin-bottom: 1em; }
-.admin-field label { display: block; font-size: .82rem; font-weight: 700; margin-bottom: .35em; }
-.admin-field input, .admin-field textarea, .admin-field select {
-  width: 100%; padding: .7em .85em; border-radius: var(--radius); border: 1px solid var(--sand-line); font-family: var(--font-body); font-size: .92rem;
-}
-.admin-list-item {
-  display: flex; align-items: center; justify-content: space-between; gap: 1em;
-  padding: .9em 0; border-bottom: 1px solid var(--sand-line);
-}
-.admin-list-item:last-child { border-bottom: none; }
-.admin-list-item .meta strong { display: block; font-size: .95rem; }
-.admin-list-item .meta span { font-size: .8rem; color: #6b7a72; }
-.admin-actions { display: flex; gap: .5em; }
-.icon-btn {
-  border: 1px solid var(--sand-line); background: #fff; border-radius: var(--radius);
-  padding: .4em .7em; font-size: .8rem; cursor: pointer; font-family: var(--font-body);
-}
-.icon-btn:hover { border-color: var(--thread-red); color: var(--thread-red); }
-.admin-notice { background: #fdf3e0; border: 1px solid var(--sand); border-radius: var(--radius); padding: 1em 1.2em; font-size: .88rem; margin-bottom: 1.6em; }
