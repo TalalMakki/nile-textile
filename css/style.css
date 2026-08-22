@@ -228,6 +228,7 @@ p { margin: 0 0 1em; }
 }
 .hero-stats div strong { display: block; font-family: var(--font-display); font-size: 1.7rem; color: var(--dye-gold); }
 .hero-stats div span { font-size: .85rem; color: rgba(237,239,226,.7); }
+#values .hero-stats div span { color: #55645d; }
 
 /* ---------- sections ---------- */
 section { padding: 5.5em 0; }
