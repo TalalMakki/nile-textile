@@ -146,8 +146,8 @@ p { margin: 0 0 1em; }
 .brand { display: flex; align-items: center; gap: .7em; font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; }
 .brand img { height: 38px; width: 38px; object-fit: contain; }
 
-.nav-links { display: flex; gap: 2em; font-family: var(--font-display); font-weight: 600; font-size: .95rem; }
-.nav-links a { position: relative; padding: .3em 0; }
+.nav-links { display: flex; gap: 1.5em; font-family: var(--font-display); font-weight: 600; font-size: .88rem; }
+.nav-links a { position: relative; padding: .3em 0; white-space: nowrap; }
 .nav-links a::after {
   content: ''; position: absolute; inset-inline-start: 0; bottom: 0; height: 2px; width: 0;
   background: var(--dye-gold); transition: width .3s var(--ease);
@@ -157,7 +157,7 @@ p { margin: 0 0 1em; }
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--ink); margin: 5px 0; }
 
-@media (max-width: 860px) {
+@media (max-width: 1050px) {
   .nav-links {
     position: fixed; inset: 78px 0 0 0; background: var(--papyrus);
     flex-direction: column; padding: 2em 28px; gap: 1.4em;
