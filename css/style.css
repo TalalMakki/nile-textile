@@ -443,6 +443,14 @@ section { padding: 5.5em 0; }
             height: 100%;
         }
 
+        .product-card .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
     .product-card .body {
         padding: 1.1em 1.2em 1.3em;
     }

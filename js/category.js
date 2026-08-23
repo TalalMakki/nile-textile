@@ -31,16 +31,19 @@
       const name = lang === 'en' ? (p.name_en || p.name) : p.name;
       const desc = lang === 'en' ? (p.desc_en || p.desc || '') : (p.desc || '');
       const tag = lang === 'en' ? (p.tag_en || p.tag) : p.tag;
-      return `
-      <div class="product-card">
-        <div class="thumb">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      const thumb = p.image
+        ? `<img src="../assets/${encodeURIComponent(p.image)}" alt="${escapeHtml(name)}" loading="lazy">`
+        : `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect width="200" height="200" fill="#e7ecf2"/>
             <g stroke="#b7c2d6" stroke-width="1.5" opacity=".6">
               <path d="M0 30 H200"/><path d="M0 70 H200"/><path d="M0 110 H200"/><path d="M0 150 H200"/>
               <path d="M30 0 V200"/><path d="M70 0 V200"/><path d="M110 0 V200"/><path d="M150 0 V200"/>
             </g>
-          </svg>
+          </svg>`;
+      return `
+      <div class="product-card">
+        <div class="thumb">
+          ${thumb}
         </div>
         <div class="body">
           <h3>${escapeHtml(name)}</h3>
