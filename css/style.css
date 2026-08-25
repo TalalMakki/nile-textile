@@ -245,6 +245,8 @@ section { padding: 5.5em 0; }
   aspect-ratio: 16/9; background: linear-gradient(155deg, var(--sand) 0%, var(--dye-gold) 60%, var(--thread-red) 130%);
 }
 .about-figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ceo-figure { aspect-ratio: 1/1; width: 100%; max-width: 440px; margin: 0 auto; }
+@media (max-width: 860px) { .ceo-figure { max-width: 340px; } }
 
 /* ---------- capability cards ---------- */
 .cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4em; }
