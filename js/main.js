@@ -80,7 +80,7 @@ if (contactForm) {
     const message = contactForm.querySelector('#cf-message').value.trim();
     const subject = encodeURIComponent('طلب تواصل من الموقع — ' + name);
     const body = encodeURIComponent(`الاسم: ${name}\nالبريد الإلكتروني: ${email}\n\n${message}`);
-    window.location.href = `mailto:orders@niletextile.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:Info@niletexind.com?subject=${subject}&body=${body}`;
   });
 }
 
