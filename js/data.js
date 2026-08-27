@@ -23,11 +23,16 @@ const NT_PRODUCTS = [
 ];
 
 const NT_CLIENTS = [
-  { id: 'c1', name: 'Atlas Retail Group', logo: '' },
-  { id: 'c2', name: 'Northline Apparel', logo: '' },
-  { id: 'c3', name: 'Casa Bianca Home', logo: '' },
-  { id: 'c4', name: 'Delta Uniforms', logo: '' },
-  { id: 'c5', name: 'Aurora Hospitality', logo: '' },
+  { id: 'c1', name: 'Bed Bath & Beyond', logo: 'assets/Bed%20Bath%20%26%20Beyond.png' },
+  { id: 'c2', name: 'COSTCO', logo: 'assets/COSTCO.png' },
+  { id: 'c3', name: 'El Corte Inglés', logo: 'assets/El%20Corte%20Ingles.png' },
+  { id: 'c4', name: "FILI D'ORO by Gastaldi", logo: "assets/FILI%20D'ORO%20by%20Gastaldi.png" },
+  { id: 'c5', name: 'GROUP TOLEDO', logo: 'assets/GROUP%20TOLEDO.png' },
+  { id: 'c6', name: 'La Vie en Rose', logo: 'assets/La%20Vie%20en%20Rose.png' },
+  { id: 'c7', name: 'Laura Ashley', logo: 'assets/Laura%20Ashley.png' },
+  { id: 'c8', name: 'Perpetuum – Mere Treaba!', logo: 'assets/Perpetuum%20-%20Mere%20Treaba!.png' },
+  { id: 'c9', name: 'Primark', logo: 'assets/Primark.png' },
+  { id: 'c10', name: 'ZARA HOME', logo: 'assets/Zara%20Home.png' },
 ];
 
 function ntLang() {
