@@ -13,6 +13,7 @@
   --thread-red: #1d74a8;   /* deep sky blue — CTAs / hover */
   --sand: #b7c2d6;         /* muted slate-blue — borders, numerals */
   --sand-line: #d7dee8;    /* light borders */
+  --marker-red: #e2483f;   /* export-map marker accent */
 
   --font-display: 'Cairo', 'Tajawal', sans-serif;
   --font-body: 'Tajawal', 'Cairo', sans-serif;
@@ -293,15 +294,19 @@ section { padding: 5.5em 0; }
     fill: var(--sand);
 }
 
-.wm-dot {
+.wm-land-highlight {
     fill: var(--dye-gold);
+}
+
+.wm-dot {
+    fill: var(--marker-red);
     stroke: var(--papyrus-2);
     stroke-width: 1.5;
 }
 
 .wm-ping {
     fill: none;
-    stroke: var(--dye-gold);
+    stroke: var(--marker-red);
     stroke-width: 2;
     transform-box: fill-box;
     transform-origin: center;
