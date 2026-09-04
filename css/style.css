@@ -265,6 +265,24 @@ section { padding: 5.5em 0; }
 .cap-card h3 { font-size: 1.05rem; margin: .5em 0 .3em; }
 .cap-card p { font-size: .92rem; color: #45564f; margin: 0; }
 
+/* ---------- certification cards ---------- */
+.cert-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.4em; }
+@media (max-width: 900px) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .cert-grid { grid-template-columns: 1fr; } }
+.cert-card {
+  background: #fff; border: 1px solid var(--sand-line); border-radius: var(--radius);
+  overflow: hidden; text-align: center; transition: border-color .25s var(--ease), transform .25s var(--ease);
+}
+.cert-card:hover { border-color: var(--thread-red); transform: translateY(-4px); }
+.cert-card .cert-thumb {
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 1/1; background: var(--papyrus-2); padding: 1em;
+}
+.cert-card .cert-thumb img { max-width: 100%; max-height: 100%; object-fit: contain; box-shadow: 0 2px 10px rgba(0,0,0,.1); }
+.cert-card .cert-body { padding: 1.2em 1.3em 1.5em; }
+.cert-card h3 { font-size: 1rem; margin: 0 0 .3em; }
+.cert-card p { font-size: .85rem; color: #45564f; margin: 0; }
+
 /* ---------- export map / countries ---------- */
 .export-grid {
     display: grid;
