@@ -436,17 +436,24 @@ section { padding: 5.5em 0; }
         .product-cat-card .pcc-label h3 {
             font-size: 1.15rem;
             margin: 0 0 .2em;
-            color: #fff;
-        }
-
-        .product-cat-card .pcc-label span {
-            font-size: .85rem;
             color: var(--dye-gold);
-            font-weight: 700;
         }
 
-    .product-cat-card:hover .pcc-label span {
-        text-decoration: underline;
+        .product-cat-card .pcc-label > span {
+            display: inline-block;
+            font-size: .8rem;
+            color: #fff;
+            font-weight: 700;
+            background: rgba(36, 144, 208, .78);
+            padding: .5em 1.1em;
+            border-radius: 999px;
+            margin-top: .7em;
+            transition: background .25s var(--ease), transform .25s var(--ease);
+        }
+
+    .product-cat-card:hover .pcc-label > span {
+        background: rgba(29, 116, 168, .85);
+        transform: translateY(-2px);
     }
 
 .product-grid {
@@ -514,7 +521,10 @@ section { padding: 5.5em 0; }
         font-size: .72rem;
         font-weight: 700;
         color: var(--thread-red);
-        margin-top: .5em;
+        background: rgba(29, 116, 168, .12);
+        border-radius: 999px;
+        padding: .35em .9em;
+        margin-top: .7em;
     }
 
 .empty-state {
