@@ -282,6 +282,11 @@ section { padding: 5.5em 0; }
 .cert-card .cert-body { padding: 1.2em 1.3em 1.5em; }
 .cert-card h3 { font-size: 1rem; margin: 0 0 .3em; }
 .cert-card p { font-size: .85rem; color: #45564f; margin: 0; }
+.cert-accredited { margin-top: 2.6em; padding-top: 2.2em; border-top: 1px solid var(--sand-line); text-align: center; }
+.cert-accredited-label { display: block; font-family: var(--font-display); font-weight: 700; font-size: .85rem; color: #45564f; margin-bottom: 1.2em; }
+.cert-accredited-logos { display: flex; align-items: center; justify-content: center; gap: 2.6em; flex-wrap: wrap; }
+.cert-accredited-logos img { height: 40px; width: auto; }
+@media (max-width: 560px) { .cert-accredited-logos img { height: 32px; } }
 
 /* ---------- export map / countries ---------- */
 .export-grid {
