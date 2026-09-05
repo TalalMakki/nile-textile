@@ -253,12 +253,12 @@ section { padding: 5.5em 0; }
 .why-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 2.6em; align-items: start; }
 @media (max-width: 860px) { .why-grid { grid-template-columns: 1fr; } }
 .why-figure {
-  position: sticky; top: 6.5em;
   border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/3;
 }
 .why-figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
-@media (max-width: 860px) { .why-figure { position: static; } }
 .why-list { display: flex; flex-direction: column; gap: 1.2em; }
+.why-list .cap-card { border: none; background: transparent; padding: 0; border-radius: 0; }
+.why-list .cap-card:hover { transform: none; }
 
 /* ---------- capability cards ---------- */
 .cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4em; }
